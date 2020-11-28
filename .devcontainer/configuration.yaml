@@ -1,0 +1,105 @@
+default_config:
+lovelace:
+  mode: yaml
+  resources:
+    - url: http://127.0.0.1:5000/custom-header.js
+      type: module
+conversation:
+input_boolean:
+  kiosk_mode:
+    name: 'kiosk_mode:'
+    initial: off
+    icon: mdi:overscan
+  disabled_mode:
+    name: 'disabled_mode:'
+    initial: off
+    icon: mdi:cancel
+  compact_mode:
+    name: 'compact_mode:'
+    initial: off
+    icon: mdi:resize
+  disable_sidebar:
+    name: 'disable_sidebar:'
+    initial: off
+    icon: mdi:dock-left
+  menu_dropdown:
+    name: 'menu_dropdown:'
+    initial: off
+    icon: mdi:menu
+  voice_dropdown:
+    name: 'voice_dropdown:'
+    initial: off
+    icon: mdi:microphone
+  reverse_tab_direction:
+    name: 'reverse_tab_direction:'
+    initial: off
+    icon: mdi:arrow-left-right-bold
+  hidden_tab_redirect:
+    name: 'hidden_tab_redirect:'
+    initial: on
+    icon: mdi:directions
+  reverse_button_direction:
+    name: 'reverse_button_direction:'
+    initial: off
+    icon: mdi:arrow-left-right-bold
+  footer_mode:
+    name: 'footer_mode:'
+    initial: off
+    icon: mdi:arrow-down-bold-box
+  chevrons:
+    name: 'chevrons:'
+    initial: off
+    icon: mdi:chevron-right-box-outline
+  indicator_top:
+    name: 'indicator_top:'
+    initial: off
+    icon: mdi:format-vertical-align-top
+  icon_changes:
+    name: 'icon change demo'
+    initial: off
+    icon: mdi:emoticon-poop
+  text_changes:
+    name: 'button text demo'
+    initial: off
+    icon: mdi:alphabetical
+input_text:
+  hide_tabs:
+    name: 'hide_tabs:'
+    initial: '6, invader'
+    icon: 'mdi:eye-off'
+  default_tab:
+    name: 'default_tab:'
+    initial: 'pacman'
+    icon: 'mdi:arrow-up-drop-circle'
+  background:
+    name: 'background:'
+    initial: '#000000'
+    icon: 'mdi:palette'
+  all_tabs_color:
+    name: 'all_tabs_color:'
+    initial: 'var(--text-primary-color)'
+    icon: 'mdi:table-row'
+  menu_color:
+    name: 'menu_color:'
+    initial: 'white'
+    icon: 'mdi:menu'
+  voice_color:
+    name: 'voice_color:'
+    initial: 'rgb(220,220,220)'
+    icon: 'mdi:microphone'
+  options_color:
+    name: 'options_color:'
+    initial: '#DCDCDC'
+    icon: 'mdi:dots-vertical'
+  active_tab_color:
+    name: 'active_tab_color:'
+    initial: 'white'
+    icon: 'mdi:tab'
+  tab_indicator_color:
+    name: 'tab_indicator_color:'
+    initial: 'grey'
+    icon: 'mdi:minus'
+  header_text:
+    name: 'header_text:'
+    initial: 'Home Assistant'
+    icon: 'mdi:arrow-up-bold-box-outline'
